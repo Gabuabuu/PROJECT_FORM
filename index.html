@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do seu cartão</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Informe os dados do seu cartão</h1>
+
+    <div class="container-card">
+        <form>
+            <div class="card-header">
+                <h2>FORMULÁRIO</h2>
+            </div>
+            <div class="dados-card">
+                <label for="titular">Nome:</label>
+                <input type="text" id="titular" name="titular" placeholder="Informe o seu nome" required maxlength="60">
+            </div>
+            <div class="dados-card">
+                <label for="validade">Validade:</label>
+                <input type="date" id="validade" name="validade" placeholder="Informe a validade do seu cartão"
+                    maxlength="6" required>
+            </div>
+            <div class="dados-card">
+                <label for="cvc">CVC:</label>
+                <input type="number" name="cvc" minlength="3" maxlength="3"  inputmode="numeric" placeholder="Informe o CVC do cartão">
+
+            </div>
+            <div class="dados-card">
+                <label for="numero-card">Número do cartão:</label>
+                <input type="number" id="numero-card" name="numero-card" placeholder="Número do cartão" required
+                    maxlength="3" minlength="3">
+            </div>
+            <div class="caixas-opcionais">
+
+                <p>O seu cartão se encaixa em algum destes? </p>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="optional[]" value="Cielo">
+                        <label for="Cielo">Cielo</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="optional[]" value="Mastercard">
+                        <label for="Mastercad">Mastercad</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name border: none;="optional[]" value="Banrissul">
+                        <label for="Banrissul">Banrrisul</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="optional[]" value="otheres">
+                        <label for="Outros">Outros</label>
+                    </li>
+                    </ul>
+            </div>
+
+            <input type="submit" value="Enviar" name="Enviar">
+            <input type="reset" name="Apagar" value="Apagar">
+            <input type="file" name="image" multiple accept="image/png, image/jpg" required>
+          
+        </form>
+    </div>
+
+    
+
+</body>
+
+</html>
